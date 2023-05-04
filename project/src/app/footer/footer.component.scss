@@ -1,0 +1,129 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    margin: 43px 0px 66px 0px;
+}
+
+.footer-container_logo-block {
+    margin-right: 98px;
+}
+
+.footer-container_logo-block_social-block {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-container_logo-block_social-block_link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background: #FFC700;
+    border-radius: 6px;
+    transition: .5s;  
+    cursor: pointer;
+}
+
+.footer-container_info-block {
+    margin: 0px 75px 0px 0px;
+}
+
+.footer-container_info-block_header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+    user-select: none;
+}
+
+.footer-container_info-block_ul {
+    list-style: none;
+}
+
+.footer-container_info-block_ul_li {
+    margin-bottom: 8px;
+}
+
+.footer-container_info-block_ul_li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-container_info-block_ul_li__link {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B7B7B7;
+    cursor: pointer;
+}
+
+.footer-container_email-block__novelty {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-container_email-block__sms {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B7B7B7;
+    padding-bottom: 10px;
+}
+
+.footer-container_email-block_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container_email-block_form__input {
+    width: 190px;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFC700;
+    padding-left: 14px;
+    border: none;
+    outline: none;
+    background: #363636;
+}
+
+.footer-container_email-block_form__input::placeholder {
+    color: #FFC700;
+}
+
+.footer-container_email-block_form__btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+    background: #FFC700;
+    padding: 7px 17px 8px 15px;
+    cursor: pointer;
+}

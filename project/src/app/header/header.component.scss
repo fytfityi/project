@@ -1,0 +1,130 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #070707;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container_tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 12px 0px;
+}
+
+.header-container_tools_search-block {
+    width: 225px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.header-container_tools_search-block_search__img {
+    margin: 0px 5.87px 0px 14.88px;
+}
+
+.header-container_tools_search-block_search-txt {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 6px 0px 7px 0px;
+    color: white;
+}
+
+.header-container_tools_search-block_search-txt::placeholder {
+    color: white;
+}
+
+.header-container_tools_logo {
+    margin: 0px 218px 0px 173px;
+    cursor: pointer;
+}
+
+.header-container_tools_basket-block {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.header-container_tools_basket-block_lang-block_link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #868686;
+    padding-top: 3px;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.header-container_tools_basket-block_lang-block_link:last-child {
+    margin: 0px 0px 0px 11px;
+}
+
+.header-container_tools_basket-block_lang-block,
+.header-container_tools_basket-block_lang-block_link:hover {
+    color: white;
+}
+
+.header-container_tools_basket-block_container {
+    margin-left: 33px;
+}
+
+.header-container_tools_basket-block_container__img {
+    cursor: pointer;
+}
+
+.header-container_tools_basket-block_container__img:last-child {
+    margin-left: 30px;
+}
+
+.header-container_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container_nav_ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container_nav_ul_li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container_nav_ul_li_link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 31px;
+    cursor: pointer;
+}
+
+.header-container_nav_ul_li_link:hover {
+    color: #070707;
+    transform: skewX(25deg);
+}
+
+.header-container_nav_ul_li:hover {
+    background: #fff;
+    transform: skewX(-25deg);  
+}

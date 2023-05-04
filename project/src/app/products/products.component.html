@@ -1,0 +1,69 @@
+<section class="section-products">
+
+    <div class="products-container">
+
+        <div class="products-container_header-block">
+
+            <div class="products-container_header-block_title-block">
+
+                <h2 class="products-container_header-block_title-block_title" *ngIf='category?.name'>
+                    <span class="products-container_header-block_title-block_title__span">
+                        {{category?.name | slice:0:2}}</span>{{category?.name | slice:2}}
+                </h2>
+
+                <h2 class="products-container_header-block_title-block_title" *ngIf='!category?.name'>
+                    <span class="products-container_header-block_title-block_title__span">
+                        Все</span> товары
+                </h2>
+
+                <p class="products-container_header-block_title-block__txt">Любые размеры и формы</p>
+
+            </div>
+
+            <div class="products-container_header-block_sort-block">
+                <ul class="products-container_header-block_sort-block_ul">
+
+                    <li class="products-container_header-block_sort-block_ul_li">
+                        <p class="products-container_header-block_sort-block_ul_li__txt">Сортировака:</p>
+                    </li>
+                    <li class="products-container_header-block_sort-block_ul_li-b">
+                        <p class="products-container_header-block_sort-block_ul_li-b_img-btn">
+                            Дешевле - Дорже
+                            <img class="products-container_header-block_sort-block_ul_li-b_img-btn__img" src="/assets/img/products-vector.png" alt="">                    
+                        </p>
+                    </li>
+                    <li class="products-container_header-block_sort-block_ul_li">
+                        <p class="products-container_header-block_sort-block_ul_li__txt">Нас странице:</p>
+                    </li>
+                    <li class="products-container_header-block_sort-block_ul_li-b">
+                        <p class="products-container_header-block_sort-block_ul_li-b_img-btn-second">
+                            16
+                            <img class="products-container_header-block_sort-block_ul_li-b_img-btn__img" src="/assets/img/products-vector.png" alt="">  
+                        </p>
+                    </li>
+
+                </ul>
+                
+            </div>
+
+        </div>
+
+        <div class="products-container_goods-block">
+            <div class="products-container_goods-block_product-block" *ngFor="let product of products">
+                <img class="products-container_goods-block_product-block__img" src={{product.image}} alt="">
+                <p class="products-container_goods-block_product-block__txt products_additional-margin">{{product.name}}</p>
+                <p class="products-container_goods-block_product-block__price">{{product.price}} руб.</p>
+            </div>
+        </div>
+
+        <div class="products-container_pagination-block">
+            <img class="products-container_pagination-block__vector-left" src="/assets/img/products-vector-left.png" alt="">
+            <span class="products-container_pagination-block__link">1</span>
+            <span class="products-container_pagination-block_link__main">2</span>
+            <span class="products-container_pagination-block__link">3</span>
+            <img class="products-container_pagination-block__vector-right" src="/assets/img/products-vector-left.png" alt="">
+        </div>
+
+    </div>
+
+</section>

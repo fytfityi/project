@@ -1,0 +1,44 @@
+<header class="header">
+    <div class="header-container">
+        <div class="header-container_tools">
+            <div class="header-container_tools_search-block">
+                <img src="assets/img/search.png" alt="search" class="header-container_tools_search-block_search__img">
+                <input class="header-container_tools_search-block_search-txt" placeholder="Поиск" type="text" name="" id="">
+            </div>
+
+            <img class="header-container_tools_logo" src="assets/img/logo.png" alt="logo" [routerLink]='["/"]'>
+
+            <div class="header-container_tools_basket-block">
+
+                <div class="header-container_tools_basket-block_lang-block">
+                    <p class="header-container_tools_basket-block_lang-block_txt">
+                        <span class="header-container_tools_basket-block_lang-block_link">RU</span>
+                        |
+                        <span class="header-container_tools_basket-block_lang-block_link">UA</span>
+                    </p>
+                </div>
+
+                <div class="header-container_tools_basket-block_container">
+
+                        <img class="header-container_tools_basket-block_container__img" src="assets/img/basket.png" alt="">
+                        <img class="header-container_tools_basket-block_container__img" src="assets/img/heart.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="header-container_nav">
+            <ul class="header-container_nav_ul">
+                <li class="header-container_nav_ul_li" *ngFor='let category of categories'>
+                    <span
+                        class="header-container_nav_ul_li_link"
+                        [routerLink]='["/products"]'
+                        [queryParams]="{ category: category.id }"
+                        >{{category.name}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
